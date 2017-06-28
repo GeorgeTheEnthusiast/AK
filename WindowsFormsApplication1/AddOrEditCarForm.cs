@@ -34,6 +34,21 @@ namespace WindowsFormsApplication1
     {
       textBoxInfo.Clear();
     }
+
+    private void AddOrEditCarForm_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void LabelBrand_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label2_Click(object sender, EventArgs e)
+    {
+
+    }
   }
 }
 //DataGridView
