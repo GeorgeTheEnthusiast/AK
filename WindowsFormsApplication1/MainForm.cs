@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-  public partial class MainForm : Form
+  public partial class MainFormRegistryOfCarInspections : Form
   {
     private List<Car> _cars = new List<Car>();
     
-    public MainForm()
+    public MainFormRegistryOfCarInspections()
     {
       InitializeComponent();
       dataGridViewCars.DataSource = _cars;
@@ -24,5 +24,11 @@ namespace WindowsFormsApplication1
     {
 
     }
-  }
+
+		private void buttonAdd_Click(object sender, EventArgs e)
+		{
+			AddOrEditCarForm addCar = new AddOrEditCarForm();
+			addCar.ShowDialog();
+		}
+	}
 }
