@@ -12,22 +12,7 @@ namespace WindowsFormsApplication1
 
     private void button1_Click(object sender, EventArgs e)
     {
-      var car1 = new Car();
-      // bool isWorking = false;
-      car1.Model = textBoxName.Text;
-      car1.ManufacturingYear = (int)numericUpDownYear.Value;
-      
 
-      /* if (bool.TryParse(textBoxIsWorking.Text, out isWorking) == false)
-      {
-        MessageBox.Show("Wpisz prawidłową wartość dla ostatniego pola!");
-
-        return;
-      }
-      car1.IsWorking = isWorking;
-	  */
-
-      textBoxInfo.Text = "Nazwa: " + car1.Model + ", Rok produkcji: " + car1.ManufacturingYear;
     }
 
     private void button2_Click(object sender, EventArgs e)
@@ -48,6 +33,12 @@ namespace WindowsFormsApplication1
     private void label2_Click(object sender, EventArgs e)
     {
 
+    }
+
+    private void buttonAdd_Click(object sender, EventArgs e)
+    {
+      DialogResult = DialogResult.OK;
+      Close();
     }
   }
 }

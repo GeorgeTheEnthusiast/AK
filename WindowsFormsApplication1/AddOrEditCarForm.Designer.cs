@@ -55,7 +55,7 @@
       this.buttonAdd.TabIndex = 0;
       this.buttonAdd.Text = "Dodaj";
       this.buttonAdd.UseVisualStyleBackColor = true;
-      this.buttonAdd.Click += new System.EventHandler(this.button1_Click);
+      this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
       // 
       // textBoxName
       // 

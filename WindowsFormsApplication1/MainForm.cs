@@ -28,7 +28,12 @@ namespace WindowsFormsApplication1
 		private void buttonAdd_Click(object sender, EventArgs e)
 		{
 			AddOrEditCarForm addCar = new AddOrEditCarForm();
-			addCar.ShowDialog();
+		  System.Windows.Forms.DialogResult dialogResult = addCar.ShowDialog();
+		  if (dialogResult == DialogResult.OK)
+		  {
+		    
+		  }
+		  
 		}
 	}
 }
