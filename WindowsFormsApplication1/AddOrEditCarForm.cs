@@ -40,10 +40,16 @@ namespace WindowsFormsApplication1
 
     private void buttonAdd_Click(object sender, EventArgs e)
     {
-
-
-      DialogResult = DialogResult.OK;
-      Close();
+			
+		Car.Model = textBoxName.Text;
+		Car.Brand = textBoxBrand.Text;
+		Car.EngineCapacity = numericUpDownEngine.Value;
+		Car.ManufacturingYear = (int)numericUpDownYear.Value;
+		Car.LastTechnicalReviewDate = dateTimePicker1.Value.Date;
+		Car.ReceivedDate = DateTime.Today;
+		Car.WhatToDo = textBoxInfo.Text;
+		DialogResult = DialogResult.OK;
+		Close();
     }
   }
 }

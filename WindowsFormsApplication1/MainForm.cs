@@ -28,12 +28,25 @@ namespace WindowsFormsApplication1
 		private void buttonAdd_Click(object sender, EventArgs e)
 		{
 			AddOrEditCarForm addCar = new AddOrEditCarForm();
-		  System.Windows.Forms.DialogResult dialogResult = addCar.ShowDialog();
-		  if (dialogResult == DialogResult.OK)
-		  {
-		    _cars.Add(addCar.Car);
-		  }
+			System.Windows.Forms.DialogResult dialogResult = addCar.ShowDialog();
+			if (dialogResult == DialogResult.OK)
+			{
+				_cars.Add(addCar.Car);
+			}
 		  
+		}
+
+		private void buttonRemove_Click(object sender, EventArgs e)
+		{
+			//foreach (DataGridView row in dataGridViewCars.SelectedRows)
+			//{
+				//if (row.SelectAll)
+				//{
+					dataGridViewCars.Rows.RemoveAt(dataGridViewCars.SelectedRows[0].Index);
+				//}
+
+			//}
+
 		}
 	}
 }
