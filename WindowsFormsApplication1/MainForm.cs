@@ -12,7 +12,7 @@ namespace WindowsFormsApplication1
 {
   public partial class MainFormRegistryOfCarInspections : Form
   {
-    private List<Car> _cars = new List<Car>();
+    private BindingList<Car> _cars = new BindingList<Car>();
     
     public MainFormRegistryOfCarInspections()
     {
@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
 		  System.Windows.Forms.DialogResult dialogResult = addCar.ShowDialog();
 		  if (dialogResult == DialogResult.OK)
 		  {
-		    
+		    _cars.Add(addCar.Car);
 		  }
 		  
 		}

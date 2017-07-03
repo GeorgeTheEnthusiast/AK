@@ -5,9 +5,12 @@ namespace WindowsFormsApplication1
 {
   public partial class AddOrEditCarForm : Form
   {
+    public Car Car { get; set; }
+
     public AddOrEditCarForm()
     {
       InitializeComponent();
+      Car = new Car();
     }
 
     private void button1_Click(object sender, EventArgs e)
@@ -37,6 +40,8 @@ namespace WindowsFormsApplication1
 
     private void buttonAdd_Click(object sender, EventArgs e)
     {
+
+
       DialogResult = DialogResult.OK;
       Close();
     }
