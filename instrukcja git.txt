@@ -1,0 +1,4 @@
+1. Commit - pliki, ktore chcesz zcommitowac, to dajesz Stage, a potem Commit (bez pusha)
+2. Fetch All (pobranie zmian z repo, ale nie zapisanie na dysku, takie podgladniecie zmian)
+3. Pull & Rebase (pobranie na dysku zmian, a w przypadku rownoleglych innych zmian - zrobi prosta linie na repo)
+4. Push (wysylasz na serwer, tak, aby kazdy widzial twoje zmiany)
