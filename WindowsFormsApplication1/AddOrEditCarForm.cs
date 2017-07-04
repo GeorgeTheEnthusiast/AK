@@ -51,7 +51,10 @@ namespace WindowsFormsApplication1
 		DialogResult = DialogResult.OK;
 		Close();
     }
+
+    public DialogResult ShowDialog(Car car)
+    {
+      return base.ShowDialog();
+    }
   }
 }
-//DataGridView
-//Dodaj, Edytuj, Usuń

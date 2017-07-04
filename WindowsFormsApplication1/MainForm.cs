@@ -20,9 +20,15 @@ namespace WindowsFormsApplication1
       dataGridViewCars.DataSource = _cars;
     }
 
-    private void button1_Click(object sender, EventArgs e)
+    private void buttonEdit_Click(object sender, EventArgs e)
     {
-
+      AddOrEditCarForm editCar = new AddOrEditCarForm();
+      Car car = _cars[dataGridViewCars.SelectedRows[0].Index];
+      System.Windows.Forms.DialogResult dialogResult = editCar.ShowDialog();
+      if (dialogResult == DialogResult.OK)
+      {
+       
+      }
     }
 
 		private void buttonAdd_Click(object sender, EventArgs e)
