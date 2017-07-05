@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
     {
       AddOrEditCarForm editCar = new AddOrEditCarForm();
       Car car = _cars[dataGridViewCars.SelectedRows[0].Index];
-      System.Windows.Forms.DialogResult dialogResult = editCar.ShowDialog();
+      System.Windows.Forms.DialogResult dialogResult = editCar.ShowDialog(car);
       if (dialogResult == DialogResult.OK)
       {
        

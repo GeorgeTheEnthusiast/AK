@@ -45,6 +45,7 @@
       this.dataGridViewCars.Location = new System.Drawing.Point(12, 12);
       this.dataGridViewCars.MultiSelect = false;
       this.dataGridViewCars.Name = "dataGridViewCars";
+      this.dataGridViewCars.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.dataGridViewCars.Size = new System.Drawing.Size(974, 315);
       this.dataGridViewCars.TabIndex = 0;
       // 
