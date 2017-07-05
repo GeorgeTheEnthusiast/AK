@@ -17,18 +17,32 @@ namespace WindowsFormsApplication1
     public MainFormRegistryOfCarInspections()
     {
       InitializeComponent();
-      dataGridViewCars.DataSource = _cars;
+	  dataGridViewCars.DataSource= _cars;
+	  dataGridViewCars.Columns[0].HeaderText = "Model";
+	  dataGridViewCars.Columns[1].HeaderText = "Rok produkcji";
+	  dataGridViewCars.Columns[2].HeaderText = "Pojemność silnika";
+	  dataGridViewCars.Columns[2].Width = 150;
+ 	  dataGridViewCars.Columns[3].HeaderText = "Marka";
+	  dataGridViewCars.Columns[4].HeaderText = "Data przyjęcia";
+	  dataGridViewCars.Columns[5].HeaderText = "Data ostatniego przeglądu";
+	  dataGridViewCars.Columns[5].Width = 200;
+	  dataGridViewCars.Columns[6].HeaderText = "Uwagi";
     }
 
     private void buttonEdit_Click(object sender, EventArgs e)
     {
-      AddOrEditCarForm editCar = new AddOrEditCarForm();
-      Car car = _cars[dataGridViewCars.SelectedRows[0].Index];
-      System.Windows.Forms.DialogResult dialogResult = editCar.ShowDialog(car);
-      if (dialogResult == DialogResult.OK)
-      {
-       
-      }
+		AddOrEditCarForm editCar = new AddOrEditCarForm();
+		Car car = _cars[dataGridViewCars.SelectedRows[0].Index];
+		System.Windows.Forms.DialogResult dialogResult = editCar.ShowDialog(car);
+		if (dialogResult == DialogResult.OK)
+		{
+				//editCar.Tag = Convert.ToString(car);
+				//_cars.Add(_cars[dataGridViewCars.SelectedRows[0].Index]);
+				_cars.Add(car);
+				//car = _cars.Add(editCar.Car);
+				//_cars.Add(editCar.Car);
+				//car.Equals(editCar.Car);	
+		}	
     }
 
 		private void buttonAdd_Click(object sender, EventArgs e)
@@ -44,14 +58,11 @@ namespace WindowsFormsApplication1
 
 		private void buttonRemove_Click(object sender, EventArgs e)
 		{
-			//foreach (DataGridView row in dataGridViewCars.SelectedRows)
-			//{
-				//if (row.SelectAll)
-				//{
-					dataGridViewCars.Rows.RemoveAt(dataGridViewCars.SelectedRows[0].Index);
-				//}
+			dataGridViewCars.Rows.RemoveAt(dataGridViewCars.SelectedRows[0].Index);
+		}
 
-			//}
+		private void dataGridViewCars_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
 
 		}
 	}

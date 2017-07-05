@@ -58,7 +58,7 @@ namespace WindowsFormsApplication1
       textBoxBrand.Text = car.Brand;
       numericUpDownEngine.Value = car.EngineCapacity;
       numericUpDownYear.Value = car.ManufacturingYear;
-		  dateTimePicker1.Value = car.LastTechnicalReviewDate;
+	  dateTimePicker1.Value = car.LastTechnicalReviewDate;
       textBoxInfo.Text = car.WhatToDo;
 
       return base.ShowDialog();
