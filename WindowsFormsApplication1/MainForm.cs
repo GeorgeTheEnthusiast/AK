@@ -17,16 +17,8 @@ namespace WindowsFormsApplication1
     public MainFormRegistryOfCarInspections()
     {
       InitializeComponent();
-	  dataGridViewCars.DataSource= _cars;
-	  dataGridViewCars.Columns[0].HeaderText = "Model";
-	  dataGridViewCars.Columns[1].HeaderText = "Rok produkcji";
-	  dataGridViewCars.Columns[2].HeaderText = "Pojemność silnika";
-	  dataGridViewCars.Columns[2].Width = 150;
- 	  dataGridViewCars.Columns[3].HeaderText = "Marka";
-	  dataGridViewCars.Columns[4].HeaderText = "Data przyjęcia";
-	  dataGridViewCars.Columns[5].HeaderText = "Data ostatniego przeglądu";
-	  dataGridViewCars.Columns[5].Width = 200;
-	  dataGridViewCars.Columns[6].HeaderText = "Uwagi";
+	    dataGridViewCars.DataSource = _cars;
+      dataGridViewCars.AutoGenerateColumns = false;
     }
 
     private void buttonEdit_Click(object sender, EventArgs e)
@@ -38,10 +30,13 @@ namespace WindowsFormsApplication1
 		{
 				//editCar.Tag = Convert.ToString(car);
 				//_cars.Add(_cars[dataGridViewCars.SelectedRows[0].Index]);
-				_cars.Add(car);
-				//car = _cars.Add(editCar.Car);
-				//_cars.Add(editCar.Car);
-				//car.Equals(editCar.Car);	
+
+		  _cars[dataGridViewCars.SelectedRows[0].Index] = editCar.Car;
+
+		  //_cars.Add(car);
+		  //car = _cars.Add(editCar.Car);
+		  //_cars.Add(editCar.Car);
+		  //car.Equals(editCar.Car);	
 		}	
     }
 
