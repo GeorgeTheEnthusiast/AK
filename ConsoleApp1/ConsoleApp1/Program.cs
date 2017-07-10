@@ -13,7 +13,7 @@ namespace ConsoleApp1
 		{
 			Drzwi drzwiJasia = new Drzwi();
 			drzwiJasia.Kolor = "brązowy";
-			drzwiJasia.Material = "drewno";
+			drzwiJasia.Material = "drewna";
 			drzwiJasia.Stan = "zamknięte";
 
 			Okno oknoJasia = new Okno();
@@ -29,7 +29,7 @@ namespace ConsoleApp1
 
 			Drzwi drzwiAni = new Drzwi();
 			drzwiAni.Kolor = "orzech";
-			drzwiAni.Material = "drewno";
+			drzwiAni.Material = "drewna";
 			drzwiAni.Stan = "otwarte";
 
 			Okno oknoAni = new Okno();
@@ -44,13 +44,21 @@ namespace ConsoleApp1
 			domAni.KolorDachu = "zielony";
 
 
-      domJasia.WydrukujStanDomu();
-		  drzwiJasia.Kolor = "zielony";
+			domJasia.WydrukujStanDomu("Jasia");
+			domAni.WydrukujStanDomu("Ani");
 
-      domAni.WydrukujStanDomu();
+			drzwiJasia.Kolor = "zielony";
+			drzwiAni.Stan = "otwarte";
+			oknoAni.Szerokosc = 1;
+			oknoAni.Wysokosc = 1.2;
+			domAni.KolorDachu = "czerwony";
+
+			domAni.WydrukujStanDomu("Ani");
+
+			domJasia.WydrukujStanDomu("Jasia");
 
 
-      
+
 
 			Console.ReadLine();
 
