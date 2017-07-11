@@ -2,8 +2,9 @@ namespace ConsoleApp1
 {
   class Okno
   {
-    public double Szerokosc;
-    public double Wysokosc;
+
+		public double Szerokosc = 1.4;
+		public double Wysokosc = 0.9;
     private string Stan;
 
     public void Otworz()

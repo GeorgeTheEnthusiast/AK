@@ -2,9 +2,12 @@ namespace ConsoleApp1
 {
   class Drzwi
   {
-    public string Material;
-    public string Kolor;
+
+    public string Material = "drewno";
+    public string Kolor = "orzech";
     private string Stan;
+
+
 
     public void Otworz()
     {
