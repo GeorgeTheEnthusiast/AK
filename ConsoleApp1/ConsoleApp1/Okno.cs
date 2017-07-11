@@ -4,7 +4,7 @@ namespace ConsoleApp1
   {
     public double Szerokosc;
     public double Wysokosc;
-    public string Stan;
+    private string Stan;
 
     public void Otworz()
     {
@@ -15,5 +15,9 @@ namespace ConsoleApp1
     {
       Stan = "Zamkniête";
     }
-  }
+		public string pobierzStan()
+		{
+			return Stan;
+		}
+	}
 }
