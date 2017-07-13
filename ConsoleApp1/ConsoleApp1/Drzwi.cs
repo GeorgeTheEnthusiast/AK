@@ -1,15 +1,18 @@
 namespace ConsoleApp1
 {
-  class Drzwi
-  {
+	class Drzwi
+	{
 
-    public string Material = "drewno";
-    public string Kolor = "orzech";
-    private string Stan;
+		public string Material = "drewna";
+		public string Kolor = "orzech";
+		private string Stan;
 
-
-
-    public void Otworz()
+		public Drzwi()
+		{
+			Zamknij();
+		}
+		
+		public void Otworz()
     {
       Stan = "Otwarte";
     }

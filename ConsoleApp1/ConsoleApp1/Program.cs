@@ -11,67 +11,22 @@ namespace ConsoleApp1
 
 		static void Main(string[] args)
 		{
-			Drzwi drzwi = new Drzwi();
-			drzwi.Zamknij();
 
-			Okno okno = new Okno();
-			okno.Zamknij();
-
-			Dom dom = new Dom();
-			dom.OknoDomu = okno;
-			dom.DrzwiDomu = drzwi;
-
-			Drzwi drzwiJasia = new Drzwi();
-			drzwiJasia.Kolor = "brązowy";
-			drzwiJasia.Material = "drewna";
-			drzwiJasia.Zamknij();
-
-			Okno oknoJasia = new Okno();
-			oknoJasia.Szerokosc = 0.5;
-			oknoJasia.Wysokosc = 1;
-			oknoJasia.Zamknij();
-
+			Dom standardowyDom= new Dom();
 			Dom domJasia = new Dom();
-			domJasia.DrzwiDomu = drzwiJasia;
-			domJasia.OknoDomu = oknoJasia;
-			domJasia.KolorScian = "biały";
-			domJasia.KolorDachu = "czarny";
-
-			Drzwi drzwiAni = new Drzwi();
-			drzwiAni.Kolor = "orzech";
-			drzwiAni.Material = "drewna";
-			drzwiAni.Otworz();
-
-			Okno oknoAni = new Okno();
-			oknoAni.Szerokosc = 0.9;
-			oknoAni.Wysokosc = 1.5;
-			oknoAni.Zamknij();
-
 			Dom domAni = new Dom();
-			domAni.DrzwiDomu = drzwiAni;
-			domAni.OknoDomu = oknoAni;
-			domAni.KolorScian = "szary";
-			domAni.KolorDachu = "zielony";
 
 
 			domJasia.WydrukujStanDomu("Jasia");
 			domAni.WydrukujStanDomu("Ani");
+			standardowyDom.WydrukujStanDomu("standardowy");
 
-			drzwiJasia.Kolor = "zielony";
-			drzwiAni.Otworz();
-			oknoAni.Szerokosc = 1;
-			oknoAni.Wysokosc = 1.2;
-			domAni.KolorDachu = "czerwony";
-
-			domAni.WydrukujStanDomu("Ani");
+			domJasia.OknoDomu.Szerokosc = 1.7;
+			domAni.KolorScian = "niebieski";
+			domAni.DrzwiDomu.Otworz();
 
 			domJasia.WydrukujStanDomu("Jasia");
-			oknoJasia.Otworz();
-			drzwiAni.Otworz();
-	
-		
-			dom.WydrukujStanDomu("standardowy");
-
+			domAni.WydrukujStanDomu("Ani");
 
 
 			Console.ReadLine();

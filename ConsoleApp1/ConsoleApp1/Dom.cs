@@ -7,8 +7,13 @@ namespace ConsoleApp1
 
     public string KolorScian = "szary";
     public string KolorDachu = "zielony";
-    public Drzwi DrzwiDomu;
+		public Drzwi DrzwiDomu; // = new Drzwi();
     public Okno OknoDomu;
+		public Dom()
+		{
+			DrzwiDomu = new Drzwi();
+			OknoDomu = new Okno();
+		}
 
 		public void ZmienKolorScian(string kolor)
     {

@@ -7,6 +7,11 @@ namespace ConsoleApp1
 		public double Wysokosc = 0.9;
     private string Stan;
 
+		public Okno()
+		{
+			Zamknij();
+		}
+
     public void Otworz()
     {
       Stan = "Otwarte";
