@@ -17,16 +17,21 @@ namespace ConsoleApp1
 			Dom domAni = new Dom();
 
 
-			domJasia.WydrukujStanDomu("Jasia");
-			domAni.WydrukujStanDomu("Ani");
-			standardowyDom.WydrukujStanDomu("standardowy");
+			standardowyDom.WydrukujStanDomu();
+			domJasia.Kogo.Jasia();
+			domJasia.WydrukujStanDomu();
+			domAni.Kogo.Ani();
+			domAni.WydrukujStanDomu();
+			
+
 
 			domJasia.OknoDomu.Szerokosc = 1.7;
 			domAni.KolorScian = "niebieski";
 			domAni.DrzwiDomu.Otworz();
 
-			domJasia.WydrukujStanDomu("Jasia");
-			domAni.WydrukujStanDomu("Ani");
+			domJasia.WydrukujStanDomu();
+			domAni.WydrukujStanDomu();
+			
 
 
 			Console.ReadLine();
