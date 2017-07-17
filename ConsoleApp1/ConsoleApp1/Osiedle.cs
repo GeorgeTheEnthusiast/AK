@@ -11,7 +11,7 @@ namespace ConsoleApp1
     public List<Dom> _dom = new List<Dom>();
     public string NazwaOsiedla;
     public string NazwaUlicy;
-		public Dom DomyOsiedla;
+		public Dom DomyOsiedla = new Dom();
 
     public Osiedle(string nazwaOsiedla, string nazwaUlicy)
     {
@@ -21,12 +21,9 @@ namespace ConsoleApp1
 
 		public void ListaDomow()
 		{
-
-			for (int i = 0; i < 3; i++)
-			{
-				_dom.Add(DomyOsiedla);
-			}
-
+			_dom.Add(DomyOsiedla);
+			_dom.Add(DomyOsiedla);
+			_dom.Add(DomyOsiedla);
 		}
 
 
