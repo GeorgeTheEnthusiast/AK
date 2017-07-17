@@ -1,16 +1,15 @@
 namespace ConsoleApp1
 {
-  class Okno
+  internal class Okno
   {
-
-		public double Szerokosc = 1.4;
-		public double Wysokosc = 0.9;
+    public double Szerokosc = 1.4;
+    public double Wysokosc = 0.9;
     private string Stan;
 
-		public Okno()
-		{
-			Zamknij();
-		}
+    public Okno()
+    {
+      Zamknij();
+    }
 
     public void Otworz()
     {
@@ -21,9 +20,9 @@ namespace ConsoleApp1
     {
       Stan = "Zamkniête";
     }
-		public string pobierzStan()
-		{
-			return Stan;
-		}
-	}
+    public string pobierzStan()
+    {
+      return Stan;
+    }
+  }
 }

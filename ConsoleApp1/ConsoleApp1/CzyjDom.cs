@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-	class CzyjDom
-	{
-		private string Czyj;
-		public CzyjDom()
-		{
-			Standardowy();
-		}
-		public void Jasia()
-		{
-			Czyj = "Jasia";
-		}
-		public void Ani()
-		{
-			Czyj = "Ani";
-		}
-		public void Standardowy()
-		{
-			Czyj = "standardowy";
-		}
-		public string pobierzWlasciciela()
-		{
-			return Czyj;
-		}
-	}
+  internal class CzyjDom
+  {
+    private string Czyj;
+    public CzyjDom()
+    {
+      Standardowy();
+    }
+    public void Jasia()
+    {
+      Czyj = "Jasia";
+    }
+    public void Ani()
+    {
+      Czyj = "Ani";
+    }
+    public void Standardowy()
+    {
+      Czyj = "standardowy";
+    }
+    public string pobierzWlasciciela()
+    {
+      return Czyj;
+    }
+  }
 }

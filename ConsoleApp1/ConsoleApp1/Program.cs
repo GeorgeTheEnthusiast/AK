@@ -6,36 +6,37 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-  class Program
-	{
-
-		static void Main(string[] args)
-		{
-
-			Dom standardowyDom= new Dom();
-			Dom domJasia = new Dom();
-			Dom domAni = new Dom();
-
-
-			standardowyDom.WydrukujStanDomu();
-			domJasia.Kogo.Jasia();
-			domJasia.WydrukujStanDomu();
-			domAni.Kogo.Ani();
-			domAni.WydrukujStanDomu();
-			
+  internal class Program
+  {
+    private static void Main(string[] args)
+    {
+      Dom standardowyDom = new Dom();
+      Dom domJasia = new Dom();
+      Dom domAni = new Dom();
+			Osiedle Zielone = new Osiedle("Zielone", "Lipska");
+			Osiedle Ustronie = new Osiedle("Ustronie", "Kasztanowa");
+			Osiedle Kmicica = new Osiedle("Kmicica", "Działkowa");
+			Console.WriteLine(string.Format("Osiedla {0}, {1}, {2}", Ustronie.NazwaOsiedla, Kmicica.NazwaOsiedla, Zielone.NazwaOsiedla));
 
 
-			domJasia.OknoDomu.Szerokosc = 1.7;
-			domAni.KolorScian = "niebieski";
-			domAni.DrzwiDomu.Otworz();
-
-			domJasia.WydrukujStanDomu();
-			domAni.WydrukujStanDomu();
-			
+      /*standardowyDom.WydrukujStanDomu();
+      domJasia.Kogo.Jasia();
+      domJasia.WydrukujStanDomu();
+      domAni.Kogo.Ani();
+      domAni.WydrukujStanDomu();
 
 
-			Console.ReadLine();
 
-		}
-	}
+      domJasia.OknoDomu.Szerokosc = 1.7;
+      domAni.KolorScian = "niebieski";
+      domAni.DrzwiDomu.Otworz();
+
+      domJasia.WydrukujStanDomu();
+      domAni.WydrukujStanDomu();*/
+
+
+
+      Console.ReadLine();
+    }
+  }
 }

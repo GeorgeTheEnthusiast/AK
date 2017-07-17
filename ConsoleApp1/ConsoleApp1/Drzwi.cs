@@ -1,18 +1,17 @@
 namespace ConsoleApp1
 {
-	class Drzwi
-	{
+  internal class Drzwi
+  {
+    public string Material = "drewna";
+    public string Kolor = "orzech";
+    private string Stan;
 
-		public string Material = "drewna";
-		public string Kolor = "orzech";
-		private string Stan;
+    public Drzwi()
+    {
+      Zamknij();
+    }
 
-		public Drzwi()
-		{
-			Zamknij();
-		}
-		
-		public void Otworz()
+    public void Otworz()
     {
       Stan = "Otwarte";
     }
@@ -21,9 +20,9 @@ namespace ConsoleApp1
     {
       Stan = "Zamkniête";
     }
-		public string pobierzStan()
-		{
-			return Stan;
-		}
+    public string pobierzStan()
+    {
+      return Stan;
+    }
   }
 }
