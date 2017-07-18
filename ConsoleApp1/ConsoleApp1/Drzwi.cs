@@ -1,6 +1,6 @@
 namespace ConsoleApp1
 {
-  internal class Drzwi
+  public class Drzwi
   {
     public string Material = "drewna";
     public string Kolor = "orzech";

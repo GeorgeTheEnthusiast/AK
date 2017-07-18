@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-  internal class CzyjDom
+  public class CzyjDom
   {
     private string Czyj;
     public CzyjDom()

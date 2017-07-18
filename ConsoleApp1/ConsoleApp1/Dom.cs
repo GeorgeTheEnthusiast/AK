@@ -2,7 +2,7 @@ using System;
 
 namespace ConsoleApp1
 {
-  internal class Dom
+  public class Dom
   {
     public string KolorScian = "szary";
     public string KolorDachu = "zielony";

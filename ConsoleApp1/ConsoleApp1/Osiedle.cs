@@ -8,25 +8,30 @@ namespace ConsoleApp1
 {
   internal class Osiedle
   {
-    public List<Dom> _dom = new List<Dom>();
+    public List<Dom> _listaDomow = new List<Dom>();
     public string NazwaOsiedla;
     public string NazwaUlicy;
-		public Dom DomyOsiedla = new Dom();
 
     public Osiedle(string nazwaOsiedla, string nazwaUlicy)
     {
       NazwaOsiedla = nazwaOsiedla;
       NazwaUlicy = nazwaUlicy;
+			DodanieDomowDoOsiedla();
     }
 
-		public void ListaDomow()
+		public void DodanieDomowDoOsiedla()
 		{
-			_dom.Add(DomyOsiedla);
-			_dom.Add(DomyOsiedla);
-			_dom.Add(DomyOsiedla);
+			Dom dom1 = new Dom();
+			Dom dom2 = new Dom();
+			Dom dom3 = new Dom();
+			_listaDomow.Add(dom1);
+			_listaDomow.Add(dom2);
+			_listaDomow.Add(dom3);
 		}
 
-
-
+		public void WydrukujStanOsiedla()
+		{
+			System.Console.WriteLine(string.Format("Osiedle {0}, które tworzą {1} domy.", NazwaOsiedla, _listaDomow.Count));
+		}
   }
 }
