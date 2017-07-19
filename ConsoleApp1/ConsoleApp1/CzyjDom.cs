@@ -11,8 +11,8 @@ namespace ConsoleApp1
     private string Czyj;
     public CzyjDom()
     {
-      Standardowy();
-    }
+			Standardowy();
+		}
     public void Jasia()
     {
       Czyj = "Jasia";
@@ -21,7 +21,11 @@ namespace ConsoleApp1
     {
       Czyj = "Ani";
     }
-    public void Standardowy()
+		public void Grzes()
+		{
+			Czyj = "Grzesia";
+		}
+		public void Standardowy()
     {
       Czyj = "standardowy";
     }
