@@ -2,15 +2,26 @@ namespace ConsoleApp1
 {
   public class Drzwi
   {
-    public string Material = "drewna";
-    public string Kolor = "orzech";
     private string Stan;
 
-    public Drzwi()
+		public Drzwi()
     {
       Zamknij();
     }
 
+		public enum ZmienMaterialDrzwi
+		{
+			Drewno,
+			Stal
+		}
+
+		public enum ZmienKolorDrzwi
+		{
+			Orzech,
+			Dab,
+			Sosna,
+			Wenge
+		}
     public void Otworz()
     {
       Stan = "Otwarte";
